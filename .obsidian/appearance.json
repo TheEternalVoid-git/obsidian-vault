@@ -1,0 +1,14 @@
+{
+  "accentColor": "#e8dbb5",
+  "theme": "obsidian",
+  "textFontFamily": "",
+  "baseFontSize": 20,
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "main_fonts",
+    "additional_fonts",
+    "art_deco_fonts"
+  ],
+  "interfaceFontFamily": "",
+  "cssTheme": "Fancy-a-Story"
+}
