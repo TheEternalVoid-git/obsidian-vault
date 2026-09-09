@@ -1,0 +1,11 @@
+### Ignore local Obsidian workspace configuration and cache
+
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/cache/ 
+
+### Ignore system files
+
+.DS_Store
+Thumbs.db
