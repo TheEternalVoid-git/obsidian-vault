@@ -9,5 +9,8 @@
   },
   "promptDelete": false,
   "showInlineTitle": true,
-  "showLineNumber": false
+  "showLineNumber": false,
+  "spellcheckDictionary": [
+    "MATHS"
+  ]
 }

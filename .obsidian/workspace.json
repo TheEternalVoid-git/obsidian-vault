@@ -47,7 +47,8 @@
               "title": "01. Modelling & Vectors"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -194,7 +195,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "REVISION TABLE.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -238,7 +238,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.591552734375
+    "width": 247.591552734375,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -254,7 +255,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "be46bc847e8fd0db",
+  "active": "7aee9884d92dd114",
   "lastOpenFiles": [
     "REVISION TABLE.md",
     "IAL Notes/Maths/M1/+ M1 (MOC).md",
