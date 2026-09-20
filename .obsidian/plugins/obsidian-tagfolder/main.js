@@ -6060,7 +6060,7 @@ function V2TreeFolderComponent_1($$anchor, $$props) {
 
 delegate([ "click", "contextmenu" ]);
 
-var import_obsidian5 = require("obsidian"), root6 = from_html('<div class="clickable-icon nav-action-button" aria-label="Change sort order"></div>  <div class="clickable-icon nav-action-button" aria-label="Expand limit"></div>  <div aria-label="Search"></div>', 1), root_14 = from_html('<div class="clickable-icon nav-action-button" aria-label="Switch List/Tree"></div>'), root_22 = from_html('<div aria-label="Toggle Incoming"></div>  <div aria-label="Toggle Outgoing"></div>  <div aria-label="Toggle Incoming&amp;Outgoing"></div>  <div aria-label="Toggle Hide indirect notes"></div>', 1), root_32 = from_html('<div class="clickable-icon nav-action-button" aria-label="Collapse all"></div>'), root_42 = from_html('<div class="search-row"><div class="search-input-container global-search-input-container"><input type="search" spellcheck="false" placeholder="Type to start search..."/>  <div class="search-input-clear-button" aria-label="Clear search"></div></div></div>'), root_52 = from_html('<div hidden=""></div> <div class="nav-header"><div class="nav-buttons-container tagfolder-buttons-container"><div class="clickable-icon nav-action-button" aria-label="New note"></div> <!> <!> <!> <!></div></div> <!> <div class="nav-files-container node-insert-event svelte-10n2ssk"><!></div>', 1), $$css3 = {
+var import_obsidian5 = require("obsidian"), root6 = from_html('<div class="clickable-icon nav-action-button" aria-label="Expand limit"></div>  <div aria-label="Search"></div>', 1), root_14 = from_html('<div class="clickable-icon nav-action-button" aria-label="Switch List/Tree"></div>'), root_22 = from_html('<div aria-label="Toggle Incoming"></div>  <div aria-label="Toggle Outgoing"></div>  <div aria-label="Toggle Incoming&amp;Outgoing"></div>  <div aria-label="Toggle Hide indirect notes"></div>', 1), root_32 = from_html('<div class="clickable-icon nav-action-button" aria-label="Collapse all"></div>'), root_42 = from_html('<div class="search-row"><div class="search-input-container global-search-input-container"><input type="search" spellcheck="false" placeholder="Type to start search..."/>  <div class="search-input-clear-button" aria-label="Clear search"></div></div></div>'), root_52 = from_html('<div hidden=""></div> <div class="nav-header"><div class="nav-buttons-container tagfolder-buttons-container"><div class="clickable-icon nav-action-button" aria-label="New note"></div>  <div class="clickable-icon nav-action-button" aria-label="Change sort order"></div> <!> <!> <!> <!></div></div> <!> <div class="nav-files-container node-insert-event svelte-10n2ssk"><!></div>', 1), $$css3 = {
   hash: "svelte-10n2ssk",
   code: ".nav-files-container.svelte-10n2ssk {height:100%;}"
 };
@@ -6200,9 +6200,9 @@ function TagFolderViewComponent($$anchor, $$props) {
       set(folderIcon, `${get(iconDivEl).innerHTML}`);
       (0, import_obsidian5.setIcon)(get(iconDivEl), "lucide-edit");
       set(newNoteIcon, `${get(iconDivEl).innerHTML}`);
+      (0, import_obsidian5.setIcon)(get(iconDivEl), "lucide-sort-asc");
+      set(upAndDownArrowsIcon, get(iconDivEl).innerHTML, true);
       if (get(isMainTree)) {
-        (0, import_obsidian5.setIcon)(get(iconDivEl), "lucide-sort-asc");
-        set(upAndDownArrowsIcon, get(iconDivEl).innerHTML, true);
         (0, import_obsidian5.setIcon)(get(iconDivEl), "stacked-levels");
         set(stackedLevels, get(iconDivEl).innerHTML, true);
         (0, import_obsidian5.setIcon)(get(iconDivEl), "search");
@@ -6257,21 +6257,17 @@ function TagFolderViewComponent($$anchor, $$props) {
   var div_1 = sibling(div, 2), div_2 = child(div_1), div_3 = child(div_2);
   html(div_3, () => get(newNoteIcon), true);
   reset(div_3);
-  var node = sibling(div_3, 2), consequent = $$anchor2 => {
-    var fragment_1 = root6(), div_4 = first_child(fragment_1);
-    html(div_4, () => get(upAndDownArrowsIcon), true);
-    reset(div_4);
-    var div_5 = sibling(div_4, 2);
+  var div_4 = sibling(div_3, 2);
+  html(div_4, () => get(upAndDownArrowsIcon), true);
+  reset(div_4);
+  var node = sibling(div_4, 2), consequent = $$anchor2 => {
+    var fragment_1 = root6(), div_5 = first_child(fragment_1);
     html(div_5, () => get(stackedLevels), true);
     reset(div_5);
     var div_6 = sibling(div_5, 2);
     html(div_6, () => get(searchIcon), true);
     reset(div_6);
     template_effect(() => set_class(div_6, 1, "clickable-icon nav-action-button " + (get(showSearch) ? " is-active" : ""), "svelte-10n2ssk"));
-    delegated("click", div_4, function(...$$args) {
-      var _a5;
-      null == (_a5 = $$props.showOrder) || _a5.apply(this, $$args);
-    });
     delegated("click", div_5, function(...$$args) {
       var _a5;
       null == (_a5 = $$props.showLevelSelect) || _a5.apply(this, $$args);
@@ -6397,6 +6393,10 @@ function TagFolderViewComponent($$anchor, $$props) {
     var _a5;
     null == (_a5 = $$props.newNote) || _a5.apply(this, $$args);
   });
+  delegated("click", div_4, function(...$$args) {
+    var _a5;
+    null == (_a5 = $$props.showOrder) || _a5.apply(this, $$args);
+  });
   append($$anchor, fragment);
   pop();
   $$cleanup();
@@ -6477,8 +6477,18 @@ var TagFolderViewBase = class extends import_obsidian7.ItemView {
     this.plugin.updateFileCaches();
   }
   showOrder(evt) {
-    const menu = new import_obsidian7.Menu;
-    menu.addItem(item => {
+    const menu = new import_obsidian7.Menu, addItemOrders = targetMenu => {
+      for (const key2 in OrderKeyItem) for (const direction in OrderDirection) targetMenu.addItem(item => {
+        const newSetting = `${key2}_${direction}`;
+        item.setTitle(OrderKeyItem[key2] + " " + OrderDirection[direction]).onClick(async () => {
+          this.plugin.settings.sortType = newSetting;
+          await this.plugin.saveSettings();
+        });
+        if (newSetting == this.plugin.settings.sortType) item.setIcon("checkmark");
+        return item;
+      });
+    }, isListView = this.getViewType() == VIEW_TYPE_TAGFOLDER_LIST;
+    if (!isListView) menu.addItem(item => {
       item.setTitle("Tags").setIcon("hashtag").onClick(evt2 => {
         const menu2 = new import_obsidian7.Menu;
         for (const key2 in OrderKeyTag) for (const direction in OrderDirection) menu2.addItem(item2 => {
@@ -6497,18 +6507,10 @@ var TagFolderViewBase = class extends import_obsidian7.ItemView {
       });
       return item;
     });
-    menu.addItem(item => {
+    if (isListView) addItemOrders(menu); else menu.addItem(item => {
       item.setTitle("Items").setIcon("document").onClick(evt2 => {
         const menu2 = new import_obsidian7.Menu;
-        for (const key2 in OrderKeyItem) for (const direction in OrderDirection) menu2.addItem(item2 => {
-          const newSetting = `${key2}_${direction}`;
-          item2.setTitle(OrderKeyItem[key2] + " " + OrderDirection[direction]).onClick(async () => {
-            this.plugin.settings.sortType = newSetting;
-            await this.plugin.saveSettings();
-          });
-          if (newSetting == this.plugin.settings.sortType) item2.setIcon("checkmark");
-          return item2;
-        });
+        addItemOrders(menu2);
         menu2.showAtPosition({
           x: evt.x,
           y: evt.y
