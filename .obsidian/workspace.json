@@ -48,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -195,6 +195,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "IAL Notes/Maths/M1/01. Modelling & Vectors.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -255,7 +256,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7aee9884d92dd114",
+  "active": "2e36efebfbf6cf40",
   "lastOpenFiles": [
     "REVISION TABLE.md",
     "IAL Notes/Maths/M1/+ M1 (MOC).md",
