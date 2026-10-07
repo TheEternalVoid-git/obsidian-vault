@@ -49,7 +49,7 @@ When asked how to minimize percentage uncertainty for any given instrument witho
 * To lower the error of a ruler, measure a **longer distance**.
 * To lower the error of a stopwatch, time **20 oscillations** instead of 1, then divide the total absolute uncertainty across the whole span.
 
-## [[Core Practicals#1. Uncertainty Rules|Uncertainty Rules]]
+## Uncertainty Rules
 
 * **Adding or Subtracting Values ($A = B \pm C$):** Add the **absolute** uncertainties.
   $$\Delta A = \Delta B + \Delta C$$

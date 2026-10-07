@@ -33,7 +33,6 @@
   "maple-editor@@hr-enable": true,
   "fancy-a-story@@fas-adaptive-accent": true,
   "fancy-a-story@@fas-theme-dark-print": "fas-theme-dark-print",
-  "fancy-a-story@@theme-variant-light": "fas-automn",
   "fancy-a-story@@theme-variant-dark": "fas-swamp",
   "fancy-a-story@@header-color": "fas-headings-rainbow",
   "fancy-a-story@@header-style-h-inline": "none",
@@ -63,5 +62,6 @@
   "fancy-a-story@@h3-color@@dark": "#ECA37E",
   "entry-point@@color-scheme-selector": "color-scheme-default",
   "fancy-a-story@@fas-hr": true,
-  "fancy-a-story@@art-deco-color": "var(--color-accent)"
+  "fancy-a-story@@art-deco-color": "var(--color-accent)",
+  "fancy-a-story@@theme-variant-light": "fas-automn"
 }
