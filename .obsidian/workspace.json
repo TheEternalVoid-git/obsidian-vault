@@ -4,66 +4,25 @@
     "type": "split",
     "children": [
       {
-        "id": "eebd252a13eb3fd8",
+        "id": "6b6696743654294a",
         "type": "tabs",
         "children": [
           {
-            "id": "bb0bb5025c446967",
+            "id": "01dbf83bcae9e2aa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "IAL Notes/Physics/Unit 1/02. Materials.md",
+                "file": "IAL Notes/Maths/P2/+ P2 (MOC).md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "02. Materials"
-            }
-          },
-          {
-            "id": "0294dd5d1a5c901d",
-            "type": "leaf",
-            "state": {
-              "type": "calendar",
-              "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
-            }
-          },
-          {
-            "id": "a33aed00580592d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AS EXAM time table.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "AS EXAM time table"
-            }
-          },
-          {
-            "id": "5aa1efb6aaf68d84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Journal/2026-10-08.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-10-08"
+              "title": "+ P2 (MOC)"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -210,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Journal/2026-10-08.md",
+                "file": "IAL Notes/Maths/P2/+ P2 (MOC).md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -250,13 +209,28 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "daily-notes:Open today's daily note": false,
-      "markdown-importer:Open format converter": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5aa1efb6aaf68d84",
+  "active": "01dbf83bcae9e2aa",
   "lastOpenFiles": [
+    "IAL Notes/Maths/P1/+ P1 (MOC).md",
+    "IAL Notes/Maths/P1/05. Integration.md",
+    "IAL Notes/Maths/P1/04. Differentiation.md",
+    "IAL Notes/Maths/P1/03. Trigonometry.md",
+    "IAL Notes/Maths/P1/02. Coordinate Geometry.md",
+    "IAL Notes/Maths/P1/01. Algebra & Functions.md",
+    "IAL Notes/Maths/M1/+ M1 (MOC).md",
+    "IAL Notes/Maths/M1/05. Momentum.md",
+    "IAL Notes/Maths/M1/04. Statics & Friction.md",
+    "Inclined plane forces.png",
+    "IAL Notes/Maths/M1/03. Dynamics.md",
+    "Atwood Machine.png",
+    "IAL Notes/Maths/M1/02. Kinematics.md",
+    "IAL Notes/Maths/M1/01. Modelling & Vectors.md",
+    "IAL Notes/Maths/++ Maths (MOC).md",
     "AS EXAM time table.md",
+    "TEST TIMETABLE.png",
     "Journal/2026-10-08.md",
     "Journal",
     "IAL Notes/Physics/Unit 1/02. Materials.md",
@@ -270,20 +244,7 @@
     "IAL Notes/Physics/Unit 2/+ Unit 2 (MOC).md",
     "IAL Notes/CS Notes/AI/AI.md",
     "IAL Notes/Physics/Unit 3/Experimental Theory.md",
-    "IAL Notes/Physics/Unit 3/Advanced Niches & Graphing Tricks.md",
-    "REVISION TABLE.md",
-    "README.md",
-    "IAL Notes/Maths/M1/01. Modelling & Vectors.md",
-    "IAL Notes/Maths/M1/+ M1 (MOC).md",
-    "IAL Notes/Maths/M1/02. Kinematics.md",
-    "IAL Notes/Physics/Unit 2/02. Electricity.md",
-    "IAL Notes/Maths/++ Maths (MOC).md",
-    "IAL Notes/Physics/Unit 3/+ Unit 3 (MOC).md",
-    "IAL Notes/Maths/M1/05. Momentum.md",
     "IAL Notes/Maths/M1.zip",
-    "IAL Notes/Maths/M1/03. Dynamics.md",
-    "IAL Notes/Maths/P2/+ P2 (MOC).md",
-    "IAL Notes/Maths/M1/04. Statics & Friction.md",
     "IAL Notes/Physics/Unit 2",
     "Untitled.base",
     "IAL Notes/Physics/Unit 1",
@@ -300,9 +261,6 @@
     "Pasted image 20240118183035.png",
     "Pasted image 20240118230028.png",
     "Pasted image 20240118230317.png",
-    "Pasted image 20250109135004.png",
-    "Pasted image 20250131162337.png",
-    "Pasted image 20251204143947.png",
     "Math/Untitled 1.canvas",
     "Untitled 1.canvas"
   ]
